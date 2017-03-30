@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 //Apply attribute changes to this window
                 window.setAttributes(layoutpars);
 
-                startActivity(new Intent(MainActivity.this, DummyActivity.class));
+
 
             }
             public void onStartTrackingTouch(SeekBar seekBar)
