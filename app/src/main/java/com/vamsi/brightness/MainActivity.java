@@ -67,9 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         try
         {
-            //Get the current system brightness
-            Settings.System.putInt(cResolver,
-                    Settings.System.SCREEN_BRIGHTNESS_MODE, Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL);
+
             //Get the current system brightness
             brightness = Settings.System.getInt(cResolver, Settings.System.SCREEN_BRIGHTNESS);
 
@@ -110,16 +108,16 @@ public class MainActivity extends AppCompatActivity {
             {
                 //Set the minimal brightness level
                 //if seek bar is 20 or any value below
-                if(progress<=20)
+               /* if(progress<=20)
                 {
                     //Set the brightness to 20
                     brightness=20;
                 }
                 else //brightness is greater than 20
-                {
+                {*/
                     //Set brightness variable based on the progress bar
                     brightness = progress;
-                }
+
                 //Calculate the brightness percentage
                 float perc = (brightness /(float)255)*100;
                 //Set the brightness percentage

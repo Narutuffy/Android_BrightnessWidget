@@ -12,7 +12,7 @@
     android:orientation="vertical"
 
     tools:context="com.vamsi.brightness.MainActivity"
-    android:background="@android:color/black">
+    android:background="@color/colorPrimaryDark">
 
 <!--    <SeekBar
         android:layout_width="match_parent"
