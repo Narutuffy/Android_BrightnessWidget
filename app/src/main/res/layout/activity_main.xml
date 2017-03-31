@@ -11,7 +11,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
 
-    tools:context="com.vamsi.brightness.MainActivity">
+    tools:context="com.vamsi.brightness.MainActivity"
+    android:background="@android:color/black">
 
 <!--    <SeekBar
         android:layout_width="match_parent"
@@ -31,7 +32,7 @@
             android:layout_height="0dp"
             android:splitTrack="false"
             app:seekBarRotation="CW270"
-            android:visibility="gone"/> <!-- Rotation: CW90 or CW270 -->
+            android:visibility="gone" /> <!-- Rotation: CW90 or CW270 -->
     </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
 
     <TextView
@@ -39,13 +40,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textPerc"
-        android:layout_marginTop="43dp"/>
+        android:layout_marginTop="43dp"
+        android:textColor="@android:color/white" />
 
-    <Button
-        android:text="Button"
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
+        android:id="@+id/imageButton"
+        android:background="@drawable/brightness_icon"
         android:onClick="Button"/>
     <!-- android:layout_below="@+id/seekBar"
      android:layout_alignParentLeft="true"
