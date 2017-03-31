@@ -6,8 +6,10 @@ import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
@@ -32,9 +34,25 @@ public class MainActivity extends AppCompatActivity {
         //Get the current window
         window = getWindow();
 
+        LinearLayout linearLayout=(LinearLayout) findViewById(R.id.activity_main);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(seekBar.getVisibility()==View.VISIBLE)
+                    seekBar.setVisibility(View.GONE);
+            }
+        });
+
                BrightnessControl();
 
 
+    }
+
+    public void Button(View view){
+        if(seekBar.getVisibility()==View.GONE)
+        seekBar.setVisibility(View.VISIBLE);
+        else
+            seekBar.setVisibility(View.GONE);
     }
 
     private void BrightnessControl() {

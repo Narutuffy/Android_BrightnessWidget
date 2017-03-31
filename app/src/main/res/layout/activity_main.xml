@@ -10,6 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+
     tools:context="com.vamsi.brightness.MainActivity">
 
 <!--    <SeekBar
@@ -23,12 +24,14 @@
     <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
         android:layout_width="wrap_content"
         android:layout_height="150dp">
+
         <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
             android:id="@+id/seekBar"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:splitTrack="false"
-            app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+            app:seekBarRotation="CW270"
+            android:visibility="gone"/> <!-- Rotation: CW90 or CW270 -->
     </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
 
     <TextView
@@ -37,7 +40,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/textPerc"
         android:layout_marginTop="43dp"/>
-       <!-- android:layout_below="@+id/seekBar"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />-->
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="Button"/>
+    <!-- android:layout_below="@+id/seekBar"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentStart="true" />-->
 </LinearLayout>
